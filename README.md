@@ -1,11 +1,17 @@
 # F1 is Not Enough
 This repository contains the code of the models and evaluation scores as well as the collected study data of our EMNLP 2020 paper [F1 is Not Enough! Models and Evaluation Towards User-Centered Explainable Question Answering](https://www.aclweb.org/anthology/2020.emnlp-main.575/).
 
+# Purpose of this Software
+This software is a research prototype, solely developed for and published as part of the publication cited above.
+It will neither be maintained nor monitored in any way.
+
 ## Evaluation Scores
-Coming soon.
+The implementation of our FaRM and LocA scores can be found at [code/scores.py](code/scores.py).
 
 ## Models
-Coming soon.
+The implementation of our "Select & Forget" architecture is provided at [code/select_and_forget.py](code/select_and_forget.py).
+
+The details and implementation of our answer-fact coupling regularizer are explained in [code/regularization.md](code/regularization.md).
 
 ## User Study Data
 We provide the detailed data collected from 40 participants in the human evaluation.
@@ -43,8 +49,12 @@ which prints the data of the first trial:
 ```
 
 ## License
-The user study data in the folder [user_study_data](user_study_data/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) (CC-BY-4.0).
+The provided source code is open-sourced under the AGPL-3.0 license. See the [LICENSE](LICENSE) file for details.
+For a list of other open source components included, see the file [3rd-party-licenses.txt](code/3rd-party-licenses.txt).
 
+The software, including its dependencies, may be covered by third party rights, including patents. You should not execute this code unless you have obtained the appropriate rights, which the authors are not purporting to give.
+
+The user study data in the folder [user_study_data](user_study_data/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) (CC-BY-4.0).
 ## Citation
 If you use our models, scores or data in your work, please cite [our paper](https://www.aclweb.org/anthology/2020.emnlp-main.575/):
 ```
